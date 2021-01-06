@@ -15,4 +15,12 @@ def translate(event:, context:)
   }).translated_text
 
   bot.api.send_message(chat_id: message["chat"]["id"], text: translation)
+
+  {
+    "statusCode": 200,
+    "headers": {},
+    "body": translation,
+    "isBase64Encoded": false
+  }
+  
 end
